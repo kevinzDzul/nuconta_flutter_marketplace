@@ -1,0 +1,10 @@
+#import './customer.graphql'
+mutation Purchase($offerId: ID!) {
+    purchase(offerId: $offerId) {
+        success,
+        errorMessage,
+        customer {
+            ...CustomerFields
+        }
+    }
+}

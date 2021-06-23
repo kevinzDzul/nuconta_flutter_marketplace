@@ -1,0 +1,9 @@
+# import './offer.graphql'
+fragment CustomerFields on Customer {
+    balance,
+    id,
+    name,
+    offers {
+        ...OfferField
+    }
+}

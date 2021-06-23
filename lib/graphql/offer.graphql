@@ -1,0 +1,8 @@
+# import './product.graphql'
+fragment OfferField on Offer {
+    id,
+    price,
+    product {
+        ...ProductFields
+    }
+}

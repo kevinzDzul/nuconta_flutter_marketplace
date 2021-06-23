@@ -1,0 +1,6 @@
+# import './customer.graphql'
+query FetchViewer {
+  viewer {
+    ...CustomerFields
+  }
+}
