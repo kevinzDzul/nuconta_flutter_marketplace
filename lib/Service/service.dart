@@ -24,10 +24,10 @@ Future<Client> initClient() async {
   final cache = Cache(store: store);
 
   final link = HttpLink(
-  '${dotenv.env["BASE_URL"]}'
+      '${dotenv.env["BASE_URL"]}'
   , defaultHeaders: {
     'Authorization':
-        'Bearer ${dotenv.env["TOKEN"]}',
+    'Bearer ${dotenv.env["TOKEN"]}',
   });
 
   final client = Client(

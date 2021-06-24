@@ -10,16 +10,13 @@ class CustomerClient {
 
   final client = GetIt.I<Client>();
 
-
   Future<Customer> getCustomer() async {
     final customerReq = GFetchViewerReq();
     final result = await client.request(customerReq).first;
-
     if (result.hasErrors) {
       throw GetRequestFailure();
     }
     final data = result.data!.viewer;
-
     return Customer.fromJson(data!.toJson());
   }
 

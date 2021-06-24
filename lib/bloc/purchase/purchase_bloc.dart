@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
 import 'package:flutter_app/Service/customer_client.dart';
 import 'package:flutter_app/models/purchase.dart';
 import 'package:meta/meta.dart';

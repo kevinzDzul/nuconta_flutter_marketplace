@@ -1,6 +1,5 @@
 import 'package:intl/intl.dart';
 
-
   String formatNumber(number) {
     final formatCurrency = new NumberFormat.currency(
       customPattern: '###,###.##',
